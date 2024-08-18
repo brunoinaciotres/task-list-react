@@ -185,8 +185,12 @@ label {
   .input-group {
     width:90%;
   }
-
-  .main-input, button, .group, .main-title {
+  .main-title {
+    width:100%;
+    text-align: left;
+    padding:0;
+  }
+  .main-input, button, .group {
     width:90%;
   }
 
