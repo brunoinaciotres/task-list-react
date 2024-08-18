@@ -172,3 +172,29 @@ label {
 .filter-btn:hover {
   background-color: #3F51B550;
 }
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 440px) {
+  form {
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  .input-group {
+    width:80%;
+  }
+
+  .main-input, button, .group, .main-title {
+    width:90%;
+  }
+
+  p.no-tasks {
+    width:90%;
+  }
+
+ .container-filter-btns {
+  flex-wrap: wrap;
+ }
+}
