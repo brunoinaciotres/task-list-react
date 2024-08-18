@@ -69,25 +69,26 @@ function TaskList() {
             </div>
           </div>
         </div>
-
-        {tasks.length != 0 ? (
-          filteredTasks.length != 0 ? (
-            filteredTasks.map((task) => (
-              <Card
-                key={task.id}
-                tasks={tasks}
-                setTasks={setTasks}
-                id={task.id}
-                title={task.name}
-                isConclude={task.isConclude}
-              />
-            ))
+        <div className="cards-container">
+          {tasks.length != 0 ? (
+            filteredTasks.length != 0 ? (
+              filteredTasks.map((task) => (
+                <Card
+                  key={task.id}
+                  tasks={tasks}
+                  setTasks={setTasks}
+                  id={task.id}
+                  title={task.name}
+                  isConclude={task.isConclude}
+                />
+              ))
+            ) : (
+              <p className="no-tasks">Não há tarefas nesse filtro</p>
+            )
           ) : (
-            <p className="no-tasks">Não há tarefas nesse filtro</p>
-          )
-        ) : (
-          <p className="no-tasks">Não há tarefas</p>
-        )}
+            <p className="no-tasks">Não há tarefas</p>
+          )}
+        </div>
       </div>
     </>
   );

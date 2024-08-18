@@ -201,4 +201,12 @@ label {
  .container-filter-btns {
   flex-wrap: wrap;
  }
+
+ .cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:100%;
+  padding:0 1rem;
+ }
 }
